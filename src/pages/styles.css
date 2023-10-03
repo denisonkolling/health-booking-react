@@ -1,0 +1,17 @@
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  height: -webkit-fill-available;
+  max-height: 100vh;
+  overflow-x: auto;
+  overflow-y: hidden;
+  background: solid red;
+}
+
+aside {
+  width: 282px;
+  height: 100vh;
+  border: solid red 1px;
+  background: #212529;
+}
