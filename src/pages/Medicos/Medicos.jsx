@@ -114,69 +114,129 @@ const Medicos = () => {
 							<label for="nome" className="form-label">
 								Nome
 							</label>
-							<input type="text" className='form-control' name="nome" onChange={handleChange} value={medic.nome} />
+							<input
+								type="text"
+								className="form-control"
+								name="nome"
+								onChange={handleChange}
+								value={medic.nome}
+							/>
 						</div>
 
 						<div className="col-md-6">
 							<label for="inputEmail4" className="form-label">
 								Email
 							</label>
-							<input type="email" className="form-control" name="email" onChange={handleChange} value={medic.email}  />
+							<input
+								type="email"
+								className="form-control"
+								name="email"
+								onChange={handleChange}
+								value={medic.email}
+							/>
 						</div>
 
 						<div className="col-md-4">
 							<label for="telefone" className="form-label">
 								Telefone
 							</label>
-							<input type="number" className="form-control" name="telefone" onChange={handleChange} value={medic.telefone}  />
+							<input
+								type="number"
+								className="form-control"
+								name="telefone"
+								onChange={handleChange}
+								value={medic.telefone}
+							/>
 						</div>
-
+						{/* TODO: Implementar Select que carrega as opções do ENUM de Especilidades */}
 						<div className="col-md-4">
 							<label for="nome" className="form-label">
 								Especialidade
 							</label>
-							<input type="text" className='form-control' name="especialidade" onChange={handleChange} value={medic.especialidade} />
+							<input
+								type="text"
+								className="form-control"
+								name="especialidade"
+								onChange={handleChange}
+								value={medic.especialidade}
+							/>
 						</div>
 
 						<div className="col-md-4">
 							<label for="crm" className="form-label">
 								CRM
 							</label>
-							<input type="number" className="form-control" name="crm" onChange={handleChange} value={medic.crm}  />
+							<input
+								type="number"
+								className="form-control"
+								name="crm"
+								onChange={handleChange}
+								value={medic.crm}
+							/>
 						</div>
 
 						<div className="col-8">
 							<label for="endereco" className="form-label">
 								Endereço
 							</label>
-							<input type="text" className="form-control" name="logradouro" onChange={handleAddressChange} value={medic.endereco.logradouro}  />
+							<input
+								type="text"
+								className="form-control"
+								name="logradouro"
+								onChange={handleAddressChange}
+								value={medic.endereco.logradouro}
+							/>
 						</div>
 
 						<div className="col-2">
 							<label for="numero" className="form-label">
 								Número
 							</label>
-							<input type="text" className="form-control" name="numero" onChange={handleAddressChange} value={medic.endereco.numero}/>
+							<input
+								type="text"
+								className="form-control"
+								name="numero"
+								onChange={handleAddressChange}
+								value={medic.endereco.numero}
+							/>
 						</div>
-						
+
 						<div className="col-2">
 							<label for="complemento" className="form-label">
 								Complemento
 							</label>
-							<input type="text" className="form-control" name="complemento" onChange={handleAddressChange} value={medic.endereco.complemento}/>
+							<input
+								type="text"
+								className="form-control"
+								name="complemento"
+								onChange={handleAddressChange}
+								value={medic.endereco.complemento}
+							/>
 						</div>
 
 						<div className="col-8">
 							<label for="endereco" className="form-label">
 								Bairro
 							</label>
-							<input type="text" className="form-control" name="bairro" onChange={handleAddressChange} value={medic.endereco.bairro}  />
+							<input
+								type="text"
+								className="form-control"
+								name="bairro"
+								onChange={handleAddressChange}
+								value={medic.endereco.bairro}
+							/>
 						</div>
 						<div className="col-md-6">
 							<label for="cidade" className="form-label">
 								Cidade
 							</label>
-							<input type="text" className="form-control" name="cidade" onChange={handleAddressChange} value={medic.endereco.cidade}/>
+							<input
+								type="text"
+								className="form-control"
+								name="cidade"
+								onChange={handleAddressChange}
+								value={medic.endereco.cidade}
+							/>
 						</div>
 
 						{/* //TODO: Alterar campo UF para Select dos estados onde existem unidades. */}
@@ -196,14 +256,26 @@ const Medicos = () => {
 							<label for="cep" className="form-label">
 								Estado
 							</label>
-							<input type="text" className="form-control" name="uf" onChange={handleAddressChange} value={medic.endereco.uf} />
+							<input
+								type="text"
+								className="form-control"
+								name="uf"
+								onChange={handleAddressChange}
+								value={medic.endereco.uf}
+							/>
 						</div>
 
 						<div className="col-md-2">
 							<label for="cep" className="form-label">
 								CEP
 							</label>
-							<input type="text" className="form-control" name="cep" onChange={handleAddressChange} value={medic.endereco.cep} />
+							<input
+								type="text"
+								className="form-control"
+								name="cep"
+								onChange={handleAddressChange}
+								value={medic.endereco.cep}
+							/>
 						</div>
 
 						{/* //TODO: incluir mensagem de sucesso quando registro for inserido no Banco de Dados */}
