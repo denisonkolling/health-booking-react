@@ -108,7 +108,7 @@ const Medicos = () => {
 				{/* INÍCIO -- Formulário Cadastro Médicos */}
 
 				<div className="container mt-2">
-					<h4>Cadastro Médicos</h4>
+					<h4>Cadastro Médico</h4>
 					<form className="row g-3" onSubmit={handleSubmit}>
 						<div className="col-md-6">
 							<label for="nome" className="form-label">
