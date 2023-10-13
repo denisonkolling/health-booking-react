@@ -108,7 +108,7 @@ const Pacientes = () => {
 				<div className="container mt-2">
 					<h4>Cadastro Paciente</h4>
 					<form className="row g-3" onSubmit={handleSubmit}>
-						<div className="col-md-3">
+						<div className="col-md-4">
 							<label for="nome" className="form-label">
 								Nome
 							</label>
@@ -132,7 +132,7 @@ const Pacientes = () => {
 								value={patient.email}
 							/>
 						</div>
-						<div className="col-md-2">
+						<div className="col-md-3">
 							<label for="telefone" className="form-label">
 								Telefone
 							</label>
@@ -171,7 +171,7 @@ const Pacientes = () => {
 							/>
 						</div>
 
-						<div className="col-1">
+						<div className="col-2">
 							<label for="numero" className="form-label">
 								Número
 							</label>
@@ -184,7 +184,7 @@ const Pacientes = () => {
 							/>
 						</div>
 
-						<div className="col-1">
+						<div className="col-2">
 							<label for="complemento" className="form-label fs-6">
 								Complemento
 							</label>
@@ -209,7 +209,7 @@ const Pacientes = () => {
 								value={patient.endereco.bairro}
 							/>
 						</div>
-						<div className="col-md-4">
+						<div className="col-md-6">
 							<label for="cidade" className="form-label">
 								Cidade
 							</label>
@@ -221,7 +221,7 @@ const Pacientes = () => {
 								value={patient.endereco.cidade}
 							/>
 						</div>
-						<div className="col-md-2">
+						<div className="col-md-3">
 							<label for="cep" className="form-label">
 								Estado
 							</label>
@@ -234,7 +234,7 @@ const Pacientes = () => {
 							/>
 						</div>
 
-						<div className="col-md-2">
+						<div className="col-md-3">
 							<label for="cep" className="form-label">
 								CEP
 							</label>
