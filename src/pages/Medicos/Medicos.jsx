@@ -130,13 +130,19 @@ const Medicos = () => {
 							</label>
 							<input type="number" className="form-control" name="telefone" onChange={handleChange} value={medic.telefone}  />
 						</div>
-{/* TODO: Implementar Select que carrega as opções do ENUM de Especilidades */}
-						<div className="col-md-4">
-							<label for="nome" className="form-label">
+
+					<div className="col-md-4">
+						<label for="especialidade" className="form-label">
 								Especialidade
 							</label>
-							<input type="text" className='form-control' name="especialidade" onChange={handleChange} value={medic.especialidade} />
-						</div>
+							<select name="especialidade" className="form-select" onChange={handleChange}>
+								<option defaultValue>Selecione...</option>
+								<option value="CARDIOLOGIA">Cardiologia</option>
+								<option value="DERMATOLOGIA">Dermatologia</option>
+								<option value="GINECOLOGIA">Ginecologia</option>
+								<option value="ORTOPEDIA">Ortopedia</option>
+							</select>
+						</div> 
 
 						<div className="col-md-4">
 							<label for="crm" className="form-label">
