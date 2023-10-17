@@ -74,7 +74,7 @@ const Consultas = () => {
 					<Navbar />
 				</aside>
 
-				<div className="container mt-2">
+				<div className="container-fluid mt-2">
 					<h4>Cadastro de Consultas</h4>
 
 					<form className="row g-3" onSubmit={handleSubmit}>
@@ -137,7 +137,7 @@ const Consultas = () => {
 						</div>
 					</form>
 
-					<div className="container mt-2">
+					<div className="container-fluid mt-2">
 						<h4>Listagem de Médicos</h4>
 						<table className="table table-striped">
 							<thead>
