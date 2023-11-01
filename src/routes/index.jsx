@@ -8,6 +8,7 @@ import Consultas from '../pages/Consultas/Consultas';
 import Unidades from '../pages/Unidades/Unidades';
 import Ocupacao from '../pages/Ocupacao/Ocupacao';
 import ListaMedicos from '../pages/ListaMedicos/ListaMedicos';
+import Atendimentos from '../pages/Atendimentos/Atendimentos';
 
 
 const RoutesApp = () => {
@@ -21,6 +22,7 @@ const RoutesApp = () => {
 				<Route exact path="/lista-medicos" element={<ListaMedicos />} />
 				<Route exact path="/pacientes" element={<Pacientes />} />
 				<Route exact path="/unidades" element={<Unidades />} />
+				<Route exact path="/atendimentos" element={<Atendimentos />} />
 				<Route exact path="/consultas" element={<Consultas />} />
 				<Route exact path="/ocupacao" element={<Ocupacao />} />
 			</Routes>

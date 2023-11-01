@@ -8,6 +8,7 @@ import {
 	People,
 	Hospital,
 	PersonBadge,
+	Calendar2Week,
 } from 'react-bootstrap-icons';
 import './styles.css';
 
@@ -48,7 +49,14 @@ const Navbar = () => {
 						Pacientes
 					</a>
 				</li>
-
+				<li className="nav-item">
+					<a href="/atendimentos" className="nav-link text-dark" aria-current="page">
+						<Calendar2Week className="bi me-2" width="16" height="16">
+							<use href="/atendimentos"></use>
+						</Calendar2Week>
+						Atendimentos
+					</a>
+				</li>
 				<li>
 					<a href="/consultas" className="nav-link text-dark">
 						<Table className="bi me-2" width="16" height="16">
@@ -121,9 +129,7 @@ const Navbar = () => {
 						<hr className="dropdown-divider" />
 					</li>
 					<li>
-						<a
-							className="dropdown-item"
-							href="/login">
+						<a className="dropdown-item" href="/login">
 							Sign out
 						</a>
 					</li>

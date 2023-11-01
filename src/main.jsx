@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@popperjs/core';
 import 'bootstrap';
+import './styles/styles.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
