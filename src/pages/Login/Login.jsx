@@ -3,9 +3,9 @@ import {
 	Facebook,
 	Google,
 	Twitter,
-	Github,
-	Hospital,
+	Github
 } from 'react-bootstrap-icons';
+import logo from '../../../public/voll-med-logo.svg'
 
 const Login = () => {
 	const [formData, setFormData] = useState({
@@ -40,6 +40,7 @@ const Login = () => {
 					<div className="container mt-5">
 						<div className="row gx-lg-5 align-items-center">
 							<div className="col-lg-6 mb-5 mb-lg-0">
+                <img src={logo} style={{width: '350px'}}/>
 								<h1 className="my-5 display-3 fw-bold ls-tight">
 									A melhor maneira
 									<br />
@@ -53,7 +54,7 @@ const Login = () => {
 								</p>
 							</div>
 
-							<div className="col-lg-6 mb-5 mb-lg-0 mt-5">
+							<div className="col-lg-6 mb-5 mb-lg-0">
 								<div className="card">
 									<div className="card-body py-5 px-md-5">
 										<form onSubmit={handleSubmit}>
