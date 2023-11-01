@@ -138,7 +138,7 @@ const Consultas = () => {
 					</form>
 
 					<div className="container-fluid mt-2">
-						<h4>Listagem de Médicos</h4>
+						<h4>Listagem de Consultas</h4>
 						<table className="table table-striped">
 							<thead>
 								<tr>

@@ -14,7 +14,6 @@ const Pacientes = () => {
 			logradouro: '',
 			bairro: '',
 			cep: '',
-			cep: '',
 			numero: '',
 			complemento: '',
 			cidade: '',
@@ -80,7 +79,6 @@ const Pacientes = () => {
 			endereco: {
 				logradouro: '',
 				bairro: '',
-				cep: '',
 				cep: '',
 				numero: '',
 				complemento: '',

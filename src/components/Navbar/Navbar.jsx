@@ -7,9 +7,9 @@ import {
 	Grid,
 	People,
 	Hospital,
-	PersonBadge
+	PersonBadge,
 } from 'react-bootstrap-icons';
-import './styles.css'
+import './styles.css';
 
 const Navbar = () => {
 	return (
@@ -25,10 +25,7 @@ const Navbar = () => {
 			<hr />
 			<ul className="nav nav-pills flex-column mb-auto">
 				<li className="nav-item">
-					<a
-						href="/home"
-						className="nav-link text-dark"
-						aria-current="page">
+					<a href="/home" className="nav-link text-dark" aria-current="page">
 						<House className="bi me-2" width="16" height="16">
 							<use xlinkHref="/home"></use>
 						</House>
@@ -36,9 +33,7 @@ const Navbar = () => {
 					</a>
 				</li>
 				<li>
-					<a
-						href="/medicos"
-						className="nav-link text-dark">
+					<a href="/medicos" className="nav-link text-dark">
 						<PersonBadge className="bi me-2" width="16" height="16">
 							<use href="/medicos"></use>
 						</PersonBadge>
@@ -46,9 +41,7 @@ const Navbar = () => {
 					</a>
 				</li>
 				<li>
-					<a
-						href="/pacientes#"
-						className="nav-link text-dark">
+					<a href="/pacientes#" className="nav-link text-dark">
 						<People className="bi me-2" width="16" height="16">
 							<use href="/pacientes"></use>
 						</People>
@@ -57,9 +50,7 @@ const Navbar = () => {
 				</li>
 
 				<li>
-					<a
-						href="/consultas"
-						className="nav-link text-dark">
+					<a href="/consultas" className="nav-link text-dark">
 						<Table className="bi me-2" width="16" height="16">
 							<use href="consultas"></use>
 						</Table>
@@ -67,9 +58,7 @@ const Navbar = () => {
 					</a>
 				</li>
 				<li>
-					<a
-						href="/unidades"
-						className="nav-link text-dark">
+					<a href="/unidades" className="nav-link text-dark">
 						<Grid className="bi me-2" width="16" height="16">
 							<use href="/unidades"></use>
 						</Grid>
@@ -77,9 +66,7 @@ const Navbar = () => {
 					</a>
 				</li>
 				<li>
-					<a
-						href="/ocupacao"
-						className="nav-link text-dark">
+					<a href="/ocupacao" className="nav-link text-dark">
 						<Speedometer className="bi me-2" width="16" height="16">
 							<use href="/ocupacao"></use>
 						</Speedometer>
@@ -89,7 +76,7 @@ const Navbar = () => {
 			</ul>
 
 			<hr />
-			
+
 			<div className="dropdown">
 				<a
 					href="https://getbootstrap.com/docs/5.0/examples/sidebars/#"
@@ -136,13 +123,12 @@ const Navbar = () => {
 					<li>
 						<a
 							className="dropdown-item"
-							href="https://getbootstrap.com/docs/5.0/examples/sidebars/#">
+							href="/login">
 							Sign out
 						</a>
 					</li>
 				</ul>
 			</div>
-			
 		</div>
 	);
 };
