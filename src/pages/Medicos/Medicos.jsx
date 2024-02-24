@@ -114,75 +114,132 @@ const Medicos = () => {
 							<label for="nome" className="form-label">
 								Nome
 							</label>
-							<input type="text" className='form-control' name="nome" onChange={handleChange} value={medic.nome} />
+							<input
+								type="text"
+								className="form-control"
+								name="nome"
+								onChange={handleChange}
+								value={medic.nome}
+							/>
 						</div>
 
 						<div className="col-md-6">
 							<label for="inputEmail4" className="form-label">
 								Email
 							</label>
-							<input type="email" className="form-control" name="email" onChange={handleChange} value={medic.email}  />
+							<input
+								type="email"
+								className="form-control"
+								name="email"
+								onChange={handleChange}
+								value={medic.email}
+							/>
 						</div>
 
 						<div className="col-md-4">
 							<label for="telefone" className="form-label">
 								Telefone
 							</label>
-							<input type="number" className="form-control" name="telefone" onChange={handleChange} value={medic.telefone}  />
+							<input
+								type="number"
+								className="form-control"
+								name="telefone"
+								onChange={handleChange}
+								value={medic.telefone}
+							/>
 						</div>
 
-					<div className="col-md-4">
-						<label for="especialidade" className="form-label">
+						<div className="col-md-4">
+							<label for="especialidade" className="form-label">
 								Especialidade
 							</label>
-							<select name="especialidade" className="form-select" onChange={handleChange}>
+							<select
+								name="especialidade"
+								className="form-select"
+								onChange={handleChange}>
 								<option defaultValue>Selecione...</option>
 								<option value="CARDIOLOGIA">Cardiologia</option>
 								<option value="DERMATOLOGIA">Dermatologia</option>
 								<option value="GINECOLOGIA">Ginecologia</option>
 								<option value="ORTOPEDIA">Ortopedia</option>
 							</select>
-						</div> 
+						</div>
 
 						<div className="col-md-4">
 							<label for="crm" className="form-label">
 								CRM
 							</label>
-							<input type="number" className="form-control" name="crm" onChange={handleChange} value={medic.crm}  />
+							<input
+								type="number"
+								className="form-control"
+								name="crm"
+								onChange={handleChange}
+								value={medic.crm}
+							/>
 						</div>
 
 						<div className="col-6">
 							<label for="endereco" className="form-label">
 								Endereço
 							</label>
-							<input type="text" className="form-control" name="logradouro" onChange={handleAddressChange} value={medic.endereco.logradouro}  />
+							<input
+								type="text"
+								className="form-control"
+								name="logradouro"
+								onChange={handleAddressChange}
+								value={medic.endereco.logradouro}
+							/>
 						</div>
 
 						<div className="col-2">
 							<label for="numero" className="form-label">
 								Número
 							</label>
-							<input type="text" className="form-control" name="numero" onChange={handleAddressChange} value={medic.endereco.numero}/>
+							<input
+								type="text"
+								className="form-control"
+								name="numero"
+								onChange={handleAddressChange}
+								value={medic.endereco.numero}
+							/>
 						</div>
-						
+
 						<div className="col-2">
 							<label for="complemento" className="form-label">
 								Complemento
 							</label>
-							<input type="text" className="form-control" name="complemento" onChange={handleAddressChange} value={medic.endereco.complemento}/>
+							<input
+								type="text"
+								className="form-control"
+								name="complemento"
+								onChange={handleAddressChange}
+								value={medic.endereco.complemento}
+							/>
 						</div>
 
 						<div className="col-2">
 							<label for="endereco" className="form-label">
 								Bairro
 							</label>
-							<input type="text" className="form-control" name="bairro" onChange={handleAddressChange} value={medic.endereco.bairro}  />
+							<input
+								type="text"
+								className="form-control"
+								name="bairro"
+								onChange={handleAddressChange}
+								value={medic.endereco.bairro}
+							/>
 						</div>
 						<div className="col-md-6">
 							<label for="cidade" className="form-label">
 								Cidade
 							</label>
-							<input type="text" className="form-control" name="cidade" onChange={handleAddressChange} value={medic.endereco.cidade}/>
+							<input
+								type="text"
+								className="form-control"
+								name="cidade"
+								onChange={handleAddressChange}
+								value={medic.endereco.cidade}
+							/>
 						</div>
 
 						{/* //TODO: Alterar campo UF para Select dos estados onde existem unidades. */}
@@ -202,14 +259,26 @@ const Medicos = () => {
 							<label for="cep" className="form-label">
 								Estado
 							</label>
-							<input type="text" className="form-control" name="uf" onChange={handleAddressChange} value={medic.endereco.uf} />
+							<input
+								type="text"
+								className="form-control"
+								name="uf"
+								onChange={handleAddressChange}
+								value={medic.endereco.uf}
+							/>
 						</div>
 
 						<div className="col-md-3">
 							<label for="cep" className="form-label">
 								CEP
 							</label>
-							<input type="text" className="form-control" name="cep" onChange={handleAddressChange} value={medic.endereco.cep} />
+							<input
+								type="text"
+								className="form-control"
+								name="cep"
+								onChange={handleAddressChange}
+								value={medic.endereco.cep}
+							/>
 						</div>
 
 						{/* //TODO: incluir mensagem de sucesso quando registro for inserido no Banco de Dados */}
@@ -226,37 +295,42 @@ const Medicos = () => {
 							</button>
 						</div>
 					</form>
-				
 
-				{/* FIM -- Formulário Cadastro Médicos */}
+					{/* FIM -- Formulário Cadastro Médicos */}
 
-				{/* Início -- Tabela Listagem de Médicos */}
+					{/* Início -- Tabela Listagem de Médicos */}
 
-				<div className="container-fluid mt-4">
-					<h4>Listagem de Médicos</h4>
+					<h4 className='my-4'>Listagem de Médicos</h4>
+					<div className="col-6">
 					<table className="table table-striped">
-						<thead>
-							<tr>
-								<th scope="col">#</th>
-								<th scope="col">Nome</th>
-								<th scope="col">Email</th>
-								<th scope="col">CRM</th>
-								<th scope="col">Especialidade</th>
-							</tr>
-						</thead>
-						<tbody>
-							{medicList.map((m) => (
-								<tr key={m.id}>
-									<td>{m.id}</td>
-									<td>{m.nome}</td>
-									<td>{m.email}</td>
-									<td>{m.crm}</td>
-									<td>{m.especialidade}</td>
-								</tr>
-							))}
-						</tbody>
-					</table>
-				</div>
+					<thead>
+									<tr>
+										<th scope="col">#</th>
+										<th scope="col">Nome</th>
+										<th scope="col">Email</th>
+										<th scope="col">CRM</th>
+										<th scope="col">Especialidade</th>
+									</tr>
+								</thead>
+								</table>
+					<div
+						className="container-fluid mt-4"
+						style={{ maxHeight: '300px', overflow: 'auto' }}>
+							<table className="table table-striped">
+								<tbody>
+									{medicList.map((m) => (
+										<tr key={m.id}>
+											<td>{m.id}</td>
+											<td>{m.nome}</td>
+											<td>{m.email}</td>
+											<td>{m.crm}</td>
+											<td>{m.especialidade}</td>
+										</tr>
+									))}
+								</tbody>
+							</table>
+						</div>
+					</div>
 				</div>
 				{/* Fim -- Tabela Listagem de Médicos */}
 			</div>
