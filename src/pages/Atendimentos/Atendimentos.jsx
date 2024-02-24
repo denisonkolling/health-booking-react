@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import appointmentService from '../../service/appointment.service';
-import { App, Calendar } from 'react-bootstrap-icons';
+import { App, Calendar, PersonSquare, CardChecklist, ArrowDownLeftSquare } from 'react-bootstrap-icons';
 
 const Atendimentos = () => {
 	const [appointmentList, setAppointmentList] = useState([]);
@@ -78,8 +78,8 @@ const Atendimentos = () => {
 				<div className="container-fluid" style={{ border: '1px solid red' }}>
 					<div className="d-flex">
 						<div className="card col-3 m-3 p-3 px-4 flex-grow-1">
-							<App className="bi me-2" width="16" height="16"></App>
 							<div>
+							<PersonSquare className="bi me-2 mb-2 fs-3"></PersonSquare>
 								<span className="text-start fw-bold">
 									Dr. Edward Scheckelton
 								</span>
@@ -89,16 +89,18 @@ const Atendimentos = () => {
 								</span>
 							</div>
 						</div>
-						<div className="card col-4 m-3 py-3 px-4 flex-grow-1">
-							<Calendar className="bi me-2" width="16" height="16"></Calendar>
+						<div className="card col-3 m-3 py-3 px-4 flex-grow-1">
+							<Calendar className="bi me-2 fs-3"></Calendar>
 							<span className="text-start fw-bold">Hoje</span>
 							<span className="text-start">02 NOV 2023</span>
 						</div>
 						<div className="card col-2 m-3 p-3 fw-bold">
-							<span className="text-end">Agendamentos</span>
+							<CardChecklist className="bi me-2 fs-3"/>
+							<span className="text-start my-2">Agendamentos</span>
 						</div>
 						<div className="card col-2 m-3 p-3 fw-bold">
-							<span className="text-end">Encaixes</span>
+						<ArrowDownLeftSquare className="bi me-2 fs-3"/>
+							<span className="text-start my-2">Encaixes</span>
 						</div>
 					</div>
 
@@ -108,28 +110,32 @@ const Atendimentos = () => {
 								<li class="nav-item">
 									<span class="nav-link active">
 										Fila<br/>
-										<span className='fw-bold'>05</span>
+										{/* <span className='fw-bold'>05</span> */}
 									</span>
 								</li>
 								<li class="nav-item">
-									<p class="nav-link" href="#">
+									<a
+										class="nav-link text-black"
+										href="#"
+										tabindex="-1"
+										aria-disabled="true">
 										Antecipados
-									</p>
+									</a>
 								</li>
 								<li class="nav-item">
 									<a
-										class="nav-link"
+										class="nav-link text-black"
 										href="#"
-										tabindex="-1"
+										tabindex="-2"
 										aria-disabled="true">
 										Aguardando
 									</a>
 								</li>
 								<li class="nav-item">
 									<a
-										class="nav-link"
+										class="nav-link text-black"
 										href="#"
-										tabindex="-1"
+										tabindex="-3"
 										aria-disabled="true">
 										Cancelamentos
 									</a>
@@ -151,8 +157,11 @@ const Atendimentos = () => {
 								</table>
 							</div>
 
-							<a href="#" class="btn btn-primary">
-								Go somewhere
+							<a href="#" class="btn btn-primary m-2">
+								Chamar
+							</a>
+							<a href="#" class="btn btn-secondary m-2">
+								Cancelar
 							</a>
 						</div>
 					</div>
