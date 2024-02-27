@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import medicoService from '../../service/medico.service';
+import Calendar from '../../components/Calendar'
+
 
 const Medicos = () => {
 	const [medicList, setMedicList] = useState([]);
@@ -21,6 +23,7 @@ const Medicos = () => {
 			cep: '',
 		},
 	});
+
 
 	useEffect(() => {
 		init();
@@ -299,11 +302,11 @@ const Medicos = () => {
 					{/* FIM -- Formulário Cadastro Médicos */}
 
 					{/* Início -- Tabela Listagem de Médicos */}
-
-					<h4 className='my-4'>Listagem de Médicos</h4>
-					<div className="col-6">
-					<table className="table table-striped">
-					<thead>
+					<div className="card my-4 p-2 d-flex flex-row">
+						<div className="col-6">
+						<h4 className="my-2 text-center">Listagem de Médicos</h4>
+							<table className="table table-striped">
+								<thead>
 									<tr>
 										<th scope="col">#</th>
 										<th scope="col">Nome</th>
@@ -312,23 +315,28 @@ const Medicos = () => {
 										<th scope="col">Especialidade</th>
 									</tr>
 								</thead>
-								</table>
-					<div
-						className="container-fluid mt-4"
-						style={{ maxHeight: '300px', overflow: 'auto' }}>
-							<table className="table table-striped">
-								<tbody>
-									{medicList.map((m) => (
-										<tr key={m.id}>
-											<td>{m.id}</td>
-											<td>{m.nome}</td>
-											<td>{m.email}</td>
-											<td>{m.crm}</td>
-											<td>{m.especialidade}</td>
-										</tr>
-									))}
-								</tbody>
 							</table>
+							<div
+								className="container-fluid mt-4"
+								style={{ maxHeight: '450px', overflow: 'auto' }}>
+								<table className="table table-striped">
+									<tbody>
+										{medicList.map((m) => (
+											<tr key={m.id}>
+												<td>{m.id}</td>
+												<td>{m.nome}</td>
+												<td>{m.email}</td>
+												<td>{m.crm}</td>
+												<td>{m.especialidade}</td>
+											</tr>
+										))}
+									</tbody>
+								</table>
+							</div>
+						</div>
+						<div className="col-6 p-2">
+							<h4 className='text-center'>Agenda</h4>
+							<Calendar />
 						</div>
 					</div>
 				</div>

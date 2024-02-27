@@ -75,7 +75,7 @@ const Atendimentos = () => {
 					<Navbar />
 				</aside>
 
-				<div className="container-fluid" style={{ border: '1px solid red' }}>
+				<div className="container-fluid" style={{ border: '' }}>
 					<div className="d-flex">
 						<div className="card col-3 m-3 p-3 px-4 flex-grow-1">
 							<div>
